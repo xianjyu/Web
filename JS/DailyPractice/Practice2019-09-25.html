@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>2019-09-25</title>
 </head>
 <body>
     <script>
@@ -39,6 +39,60 @@
         y = ++x;
         console.log("[++在前]\nx值为：" + x + "\ny值为：" + y)
 
+        // 小于、小于等于
+        console.log("结果为" + (5<6)); 
+        console.log("结果为" + (6<=6));
+        console.log("结果为" + ("10"<="6"));    
+        console.log("结果为" + ("abc"<="ahf")); 
+
+        // 大于、大于等于
+        console.log("结果为" + ("22a"<=6));  
+        console.log("结果为" + ("22a">=6));
+        console.log("结果为" + ("12"<=6)); 
+        console.log("结果为" + ("12">=6));
+
+        // 逻辑运算符
+        console.log(4<5 && 7==7);  //true      true  && true   true
+        console.log(4<5 && 7==9);  //false      0 乘以 任何数都得0      false 与 任何布尔值都是false 
+        console.log(4>5 && 5==7);  //false
+        console.log(4<5 || 7==9);  //true   true  或 || 任何布尔值结果都是true   
+        console.log(4<5 || 7==7);  //true  
+        console.log(4>5 || 5==7);  //false
+        var i = 2020;
+        console.log(i%3==0);
+        console.log(i%2==0 && i%5 ==0);
+        // 判断闰年 能被4整除但不能被100整除 或者能被400整除
+        console.log( i%4==0 && i%100!=0 || i%400==0 );
+
+        // 三元运算符        
+        var num = 1;
+        console.log(num%2==0 ? num + "是偶数": num+ "不是偶数");
+
+        // 生产1-10000内的数字
+        var num = Math.floor(Math.random()*10000+1);
+        console.log(num);
+        /*
+        var times = 0;
+        for (var index = 1000; index < 2000; index++) {
+            if (index %4 == 0 && index%100 != 0 || index %400 == 0){
+                console.log(index + "为闰年！");
+                times++;
+            // }else{
+            //     console.log(index + "为平年！");
+            }
+        }
+        console.log("一共有" + times + "个数！");
+        */
+        
+        // 用户输入
+        var str = prompt("请输入：");
+        console.log("接收结果为：" + str);
+        console.log("str类型为：" + typeof(str));
+        
+        var num = parseInt(prompt("请输入一个整数："));
+        console.log("接收结果为：" + num);
+        console.log("num类型为：" + typeof(num));
+        
     </script>
 </body>
 </html>
