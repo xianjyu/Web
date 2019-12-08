@@ -27,11 +27,68 @@
         // test();
         var scope = "global";
         function ActionScope() {
+            var scope;
             console.log(scope); // undefined
             var scope = "local";
             console.log(scope); // local
         }
         ActionScope();
+
+        var myvar = "my value";
+        (function () {
+            console.log("myvar变量值：" + myvar); // 
+            var myvar = "local value";            
+        })();
+        const PI = 3.14;
+        console.log(PI);
+        // Uncaught SyntaxError: Identifier 'f' has already been declared
+        // function f(){};
+        // const f = 5;
+
+        // number类型, typeof()查看变量i数据类型
+        var i = 10;
+        console.log(i + "是" + typeof(i) + "类型"); // number
+        var i2 = 10.2;
+        console.log(i2 + "是" + typeof(i2) + "类型"); // number
+        
+        // string类型
+        var str = "Hello JS";
+        console.log(str + "是" + typeof(str) + "类型");
+        
+        // boolean
+        var t = true;
+        var f = false;
+        console.log(t + "是" + typeof(t) + "类型");
+        console.log(f + "是" + typeof(f) + "类型");
+
+        // undefined类型
+        var und ;
+        console.log("und的值是：" + und);
+        console.log(und + "是" + typeof(und) + "类型");
+        
+        // null类型
+        var n = null;
+        console.log(n + "是" + typeof(n) + "类型");
+        
+        // 算术运算符：+ - * /
+        console.log("运算符 + 结果为：" + (10+5));
+        console.log("运算符 - 结果为：" + (10-5));
+        console.log("运算符 * 结果为：" + 10*5);
+        console.log("运算符 / 结果为：" + 10/5);
+        
+        // 取余
+        var mod = 10%3;
+        console.log("取余结果为：" + mod); 
+
+        // ++：自增
+        var x = 5;
+        y = x++;
+        console.log("[++在后]\nx值为：" + x + "\ny值为：" + y)
+
+        var x = 5;
+        y = ++x;
+        console.log("[++在前]\nx值为：" + x + "\ny值为：" + y)
+
     </script>
 </body>
 </html>
