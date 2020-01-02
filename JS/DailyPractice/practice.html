@@ -8,14 +8,11 @@
 </head>
 <body>
    <script>
-       var age = prompt("请输入你的年龄：");
-       if(age > 150 || age < 0){
-            alert("你输入的年龄不合法，请重新输入！");
-       }else if(age > 20){
-           alert("可以来千峰学习了！");
-       }else{
-           alert("继续上大学！");
+       var count = 0;
+       for(var index = 1; index <= 100; index++){
+            count += index;
        }
+       document.write("1到100加起来的和为：" + count + "!");
    </script>
 </body>
 </html>
