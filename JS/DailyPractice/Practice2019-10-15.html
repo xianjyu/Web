@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function fn(n) {
+        //     if (n == 1 || n==2) {
+        //         return 1;
+        //     }
+        //     return fn(n-1) + fn (n-2);
+        // }
+        // console.log(fn(10));
+        // 创建一个对象
+        // var xjyu = {
+        //     // 属性
+        //     name: "yuxj",
+        //     age: 24,
+        //     edu: "Undergraduate",
+        //     birthday: {
+        //         year: 1995,
+        //         month: 5,
+        //         day: 23
+        //     }, 
+        //     // 方法
+        //     greeting: function () {  
+        //         console.log("Hello，" + this.name + "."); 
+                
+        //     } 
+        // }
+        // console.log(typeof xjyu);   // object
+        // console.log(xjyu.name);     // yuxj==>对象.属性名  
+        // console.log(xjyu['name']);
+        // console.log(xjyu.birthday.year);
+        // console.log(xjyu.birthday.month);
+        // console.log(xjyu.birthday.day);
+        // console.log(xjyu.greeting());
+        
+        // var attr = 'edu';
+        // console.log(xjyu.edu);
+        // console.log(xjyu['edu']);
+        // console.log(xjyu[attr]);    // attr为变量时只能用中括号
+        // console.log(xjyu.attr);     // undefined
+        // // 对象可以动态添加成员
+        // xjyu.wx = '13989353209';
+        // xjyu.sing = function () {
+        //     console.log("singin");
+        // }
+        // console.log(xjyu);
+        // 在JS中基本数据类型是不能动态添加属性的
+        // var num = 100;
+        // num.idx = 1;
+        // console.log(num.idx);   // undefined
+
+        var myCars = new Array();
+        myCars[0] = "Saab";      
+        myCars[1] = "Volvo";
+        myCars[2] = "BMW";
+        
+        console.log(myCars);
+        console.log(myCars[0]);
+        console.log("数组长度为：" + myCars.length);
+        
+        for (var i = 0; i < myCars.length; i++){
+            // console.log(i);
+            console.log(myCars[i]);
+        }
+        
+    </script>
+</body>
+</html>
